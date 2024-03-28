@@ -1,6 +1,13 @@
 const question = [
     {
         id: "01",
-        answer01: "ア"
-    }
+        question:"",
+        imageLink:"",
+        ans1: "ア",
+        ans2: "イ",
+        ans3: "ウ",
+        ans4: "エ",
+        correct: "1",
+        exp:""
+    },
 ]
