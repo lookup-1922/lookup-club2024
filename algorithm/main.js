@@ -21,11 +21,11 @@ function displayQuestion(index) {
     $(".selection").empty(); // 選択肢をクリア
     // 選択肢を表示
     for (var i = 0; i < questionData.choices.length; i++) {
-        $(".selection").append("<button>" + questionData.choices[i] + "</button>");
+        $(".selection").append("<p><button class=\"choice\">" + questionData.choices[i] + "</button></p>");
     }
     // 選択肢のボタンがクリックされた時の処理
-    $(".selection button").click(function () {
-        var selectedAnswer = $(this).index(); // 選択された選択肢のインデックス
+    $(".choice").click(function () {
+        let selectedAnswer = $(".choice").index(this); // 選択された選択肢のインデックス
         if (selectedAnswer === questionData.correctAnswer) {
             $(".answer").html("正解！<br>" + questionData.explanation); // 正解の場合の表示
         } else {

@@ -51,13 +51,33 @@ body {
 /* 選択肢と次の問題へのスタイル */
 .selection {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .change {
     margin-top: 20px;
 }
 
-button {
+.choice {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    color: #4D9BC1;
+    border: 2px solid #4D9BC1;
+    background: #fff;
+    padding: 1em 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.choice:hover {
+    color: #fff;
+    background: #4D9BC1;
+}
+
+#next {
     background-color: #007bff;
     color: white;
     border: none;
@@ -65,4 +85,5 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
