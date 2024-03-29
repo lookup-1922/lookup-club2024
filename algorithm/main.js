@@ -27,9 +27,9 @@ function displayQuestion(index) {
     $(".choice").click(function () {
         let selectedAnswer = $(".choice").index(this); // 選択された選択肢のインデックス
         if (selectedAnswer === questionData.correctAnswer) {
-            $(".answer").html("正解！<br>" + questionData.explanation); // 正解の場合の表示
+            $(".answer").html("正解(OK)<br>" + questionData.explanation); // 正解の場合の表示
         } else {
-            $(".answer").html("不正解。<br>" + questionData.explanation); // 不正解の場合の表示
+            $(".answer").html("不正解(NG)<br>" + questionData.explanation); // 不正解の場合の表示
         }
     });
 }
