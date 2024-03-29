@@ -1,0 +1,68 @@
+/* 全体のレイアウト */
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.Qlist {
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 44px);
+}
+
+/* mainとcommandのレイアウト */
+.main,
+.command {
+    flex: 1;
+    background-color: #ffffff;
+    /* 背景色を白に設定 */
+    border: 1px solid #000000;
+    /* 黒色の枠線を追加 */
+}
+
+/* mainとcommandの幅を調整 */
+.main {
+    flex: 70vw;
+    padding: 20px;
+}
+
+.command {
+    flex: 30vw;
+    padding: 20px;
+}
+
+.quetion {
+    margin-bottom: 20px;
+}
+
+.answer {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* 選択肢と次の問題へのスタイル */
+.selection {
+    margin-bottom: 10px;
+}
+
+.change {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
