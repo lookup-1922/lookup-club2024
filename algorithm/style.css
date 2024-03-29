@@ -9,6 +9,13 @@ body {
     margin: 0 auto;
     padding: 10px;
     text-align: center;
+    display: flex;
+    list-style: none;
+}
+
+.Qlist li {
+    margin-left: 2em;
+    cursor: pointer;
 }
 
 .container {
@@ -69,7 +76,8 @@ body {
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    transition: 0.3s;cursor: pointer;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .choice:hover {
