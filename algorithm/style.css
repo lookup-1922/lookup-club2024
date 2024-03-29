@@ -37,6 +37,7 @@ body {
 .command {
     flex: 30vw;
     padding: 20px;
+    position: relative;
 }
 
 .quetion {
@@ -61,7 +62,6 @@ body {
 .choice {
     display: inline-block;
     width: 100%;
-    max-width: 350px;
     color: #4D9BC1;
     border: 2px solid #4D9BC1;
     background: #fff;
@@ -78,12 +78,21 @@ body {
 }
 
 #next {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #4D9BC1;
+    border: 2px solid #4D9BC1;
+    background: #fff;
+    padding: 1em 2em;
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: none;
     text-align: center;
+    transition: 0.3s;
+}
+
+#next:hover {
+    color: #fff;
+    background: #4D9BC1;
 }
