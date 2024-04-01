@@ -16,9 +16,10 @@ $(document).ready(function () {
 function displayWelcome() {
     currentQuestionIndex = 0;
     result = Array(questions.length).fill(-1);
-    $(".content, .answer, .selection").empty();
+    $(".content, .answer, .selection, .questionList").empty();
     $(".content").html("右下の「次の問題へ」を押してスタートしてね。");
     $(".answer").html("解答表示エリア");
+    $(".questionList").html("問題リスト");
     $("#next").off("click").click(function () {
         displayQuestionList(); // qustionListを表示
         displayQuestion(0);
@@ -89,9 +90,10 @@ function displayResult() {
     currentQuestionIndex = 0;
     let countTrue = result.filter(value => value === true).length;
     let resultReport = countTrue / result.length * 100 + "%";
-    $(".content, .answer, .selection").empty();
+    $(".content, .answer, .selection, .questionList").empty();
     $(".content").html("あなたのスコア：" + resultReport);
     $(".answer").html("おめでとう");
+    $(".questionList").html("問題リスト");
     $("#next").off("click").click(function () {
         displayWelcome();
     });
